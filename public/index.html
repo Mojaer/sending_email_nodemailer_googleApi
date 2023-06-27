@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form data interaction</title>
+</head>
+
+<body>
+    <h2 style="text-align: center;">for sending email with reply</h2>
+    <form action="/rule_1_2" method="POST">
+        <div style="margin: auto ; text-align: center ; font-size: xx-large; margin-top: 3rem;">
+            <label for="email">Email:</label>
+            <input style="padding: 1rem;" type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label>
+            <input style="padding: 1rem;" type="text" id="message" name="message" required><br><br>
+            <input style="padding: .3rem;font-size: larger;" type="submit" value="Submit">
+        </div>
+    </form>
+
+    <h2 style="text-align: center;">For sending email with attachments and unsubscribe header </h2>
+    <form action="/rule_3_4" method="POST" enctype="multipart/form-data">
+        <div style="margin: auto ; text-align: center ; font-size: xx-large; margin-top: 3rem;">
+            <label for="email">Email:</label>
+            <input style="padding: 1rem;" type="email" id="email" name="email" required><br><br>
+            <label for="file">file:</label>
+            <input style="padding: 1rem;" type="file" id="file" name="file" required><br><br>
+            <input style="padding: .3rem;font-size: larger;" type="submit" value="Submit">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
